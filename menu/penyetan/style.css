@@ -148,3 +148,29 @@
     gap: 30px 70px;
   }
 }
+
+/* CART */
+.cartcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cart {
+  margin-top: -40px;
+  margin-right: 50px;
+}
+
+.cart img {
+  width: 40px;
+}
+
+@media (max-width: 641px) {
+  .cart {
+    margin-right: 10px;
+  }
+  .cart img {
+    width: 30px;
+  }
+}
