@@ -7,6 +7,12 @@
   margin-top: 55px;
 }
 
+@media (min-width: 641px) {
+  .content {
+    margin-top: 80px;
+  }
+}
+
 .content::before {
   content: "";
   position: absolute;
@@ -32,6 +38,13 @@
   padding: 0 30px;
   width: auto;
   height: auto;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 641px) {
+  .contentinside {
+    gap: 50px;
+  }
 }
 
 .content h1 {
@@ -41,8 +54,19 @@
   font-weight: normal;
   color: #96471e;
   margin: 0;
+  margin-left: 0;
   margin-top: -40px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 641px) {
+  .content h1 {
+    font-size: 32px;
+    margin: 0;
+    margin-left: 60px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+  }
 }
 
 .containerlogotext {
@@ -52,10 +76,16 @@
   gap: 20px;
 }
 
+@media (min-width: 641px) {
+  .containerlogotext {
+    gap: 72px;
+  }
+}
+
 .containerlogotext .text {
-  width: 130px;
+  width: 220px;
   padding: 0px 15px;
-  font-size: 9px;
+  font-size: 15px;
   border-radius: 10px;
   background: rgba(245, 245, 245, 0.3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
@@ -73,8 +103,29 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media (min-width: 641px) {
+  .containerlogotext .text {
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25),
+      0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .containerlogotext .logo {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25),
+      0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
 .containerlogotext .logo img {
   width: 125px;
   height: 125px;
   object-fit: contain;
+}
+
+@media (min-width: 641px) {
+  .containerlogotext .logo img {
+    width: 200px;
+    height: 200px;
+  }
 }
