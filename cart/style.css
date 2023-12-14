@@ -48,6 +48,12 @@
   }
 }
 
+@media (max-width: 641px) {
+  .contentinside {
+    padding-bottom: 40px;
+  }
+}
+
 .content h1 {
   align-self: flex-start;
   font-family: "Kaushan Script";
@@ -91,6 +97,12 @@
   gap: 20px;
 }
 
+@media (max-width: 641px) {
+  .cartlist {
+    width: 280px;
+  }
+}
+
 .desc {
   width: 100%;
   display: flex;
@@ -109,6 +121,13 @@
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 641px) {
+  .desc img {
+    width: 165px;
+    height: 110px;
+  }
 }
 
 .note {
@@ -132,6 +151,13 @@
   align-items: center;
   justify-content: space-between;
   margin-top: -30px;
+}
+
+@media (max-width: 641px) {
+  .contentinside .button {
+    width: 280px;
+    margin-top: 0px;
+  }
 }
 
 .contentinside .button a {

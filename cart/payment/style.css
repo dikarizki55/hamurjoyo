@@ -71,6 +71,7 @@
 }
 
 .cartcontainer {
+  width: 480px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,8 +83,14 @@
   padding: 30px;
 }
 
+@media (max-width: 641px) {
+  .cartcontainer {
+    width: 90%;
+  }
+}
+
 .cartlist {
-  width: 480px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,11 +109,17 @@
 }
 
 .contentinside .button {
-  width: 500px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: -30px;
+}
+
+@media (max-width: 641px) {
+  .contentinside .button {
+    margin-top: 0px;
+  }
 }
 
 .contentinside .button a {
