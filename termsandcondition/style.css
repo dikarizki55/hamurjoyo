@@ -30,23 +30,34 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  padding: 15px;
-  margin-bottom: 160px;
+  padding: 40px;
+}
+
+@media (min-height: 800px) {
+  .footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 15px;
+    justify-content: center;
+    gap: 75px;
+    padding: 0;
+  }
 }
 
 .form {
-  padding: 30px 20px;
-  width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  border-radius: 10px;
+  padding: 50px;
+  border-radius: 20px;
   background: rgba(245, 245, 245, 0.3);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  gap: 15px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.form > div {
+  width: 350px;
 }
 
 .form h1 {
@@ -60,7 +71,9 @@ body {
   margin: 0;
 }
 
+.form textarea,
 .form input {
+  width: 100%;
   padding: 5px;
   font-size: 14px;
   background: none;
@@ -70,19 +83,21 @@ body {
   color: #f5f5f5;
 }
 
+.form textarea:focus,
 .form input:focus {
   outline: none !important;
   border: none;
   border-bottom: 1px solid #f5f5f5;
 }
 
+.form textarea::placeholder,
 .form input::placeholder {
   color: #a3a3a3;
 }
 
 .button {
   cursor: pointer;
-  align-self: flex-end;
+  margin-top: 30px;
   font-size: 12px;
   color: #f5f5f5;
   padding: 8px 10px;
@@ -101,13 +116,4 @@ body {
 .button:hover {
   background-color: #5a270b;
   color: grey;
-}
-
-.list {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #818181;
-  padding-bottom: 10px;
 }
